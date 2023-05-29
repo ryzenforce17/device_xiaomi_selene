@@ -91,26 +91,17 @@ ro.vendor.mtk_ril_mode=c6m_1rild
 ro.vendor.mtk_rild_read_imsi=1
 
 # SurfaceFlinger
-ro.surface_flinger.primary_display_orientation=ORIENTATION_0
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-ro.surface_flinger.running_without_sync_framework=true
-ro.surface_flinger.has_wide_color_display=true
-debug.sf.use_phase_offsets_as_durations=1
-debug.sf.high_fps.late.sf.duration=30000000
-debug.sf.high_fps.late.app.duration=26000000
-debug.sf.high_fps.early.sf.duration=28000000
-debug.sf.high_fps.early.app.duration=26000000
-debug.sf.high_fps.earlyGl.sf.duration=30000000
-debug.sf.high_fps.earlyGl.app.duration=25000000
-debug.sf.high_fps.hwc.min.duration=20000000
-debug.sf.disable_client_composition_cache=1
-debug.sf.enable_transaction_tracing=false
-debug.sf.predict_hwc_composition_strategy=0
-persist.sys.sf.color_saturation=1.1
-persist.sys.sf.native_mode=0
-ro.config.avoid_gfx_accel=true
-ro.hwui.render_ahead=10
+debug.sf.disable_backpressure=1
+debug.sf.high_fps.early.app.duration=22500000
+debug.sf.high_fps.early.sf.duration=27600000
+debug.sf.high_fps.earlyGl.app.duration=22500000
+debug.sf.high_fps.earlyGl.sf.duration=27600000
+debug.sf.high_fps.hwc.min.duration=17000000
+debug.sf.high_fps.late.app.duration=22500000
+debug.sf.high_fps.late.sf.duration=27600000
+
+# HWUI
+ro.hwui.render_ahead=20
 
 # Zygote
 zygote.critical_window.minute=10
