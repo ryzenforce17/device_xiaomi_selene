@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_selene.mk
+   $(LOCAL_DIR)/awaken_selene.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_selene-user \
-    lineage_selene-userdebug \
-    lineage_selene-eng
+    awaken_selene-user \
+    awaken_selene-userdebug \
+    awaken_selene-eng
