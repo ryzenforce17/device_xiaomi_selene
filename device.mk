@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Aperture
-    
+
 # Disable Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -174,11 +174,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3 \
     android.hardware.drm@1.3.vendor
-    
+
 # DT2W
 PRODUCT_PACKAGES += \
     DT2W-Service-MT6768
-    
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/dt2w/dt2w_event:$(TARGET_COPY_OUT_VENDOR)/bin/dt2w_event
 
@@ -243,7 +243,7 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
     libpcap.vendor
-    
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -305,11 +305,11 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3 \
     android.hardware.power@1.3.vendor \
     android.hardware.power-service.mediatek-libperfmgr
-    
+
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
-    libmtkperf_client 
-    
+    libmtkperf_client
+
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \
@@ -342,7 +342,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor
-    
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
@@ -418,6 +418,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_USES_QCOM_HARDWARE := false
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -470,11 +471,11 @@ PRODUCT_PACKAGES += \
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-    
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.selene
-    
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
@@ -523,7 +524,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(DEVICE_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
-    
+
 PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
