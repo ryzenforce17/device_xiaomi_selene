@@ -29,7 +29,7 @@ AB_OTA_PARTITIONS := \
     vendor \
     vbmeta \
     vbmeta_system
-    
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
@@ -71,7 +71,6 @@ TARGET_HAS_HDR_DISPLAY := true
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6768
 BOARD_HAS_MTK_HARDWARE := true
 
 # Charger
